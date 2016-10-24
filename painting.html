@@ -1,0 +1,52 @@
+<html>
+<title>painingt</title>
+<body>
+<canvas id="canvas"></canvas>
+<link rel="stylesheet" href="painting.css" media="screen">
+<script src="jquery-2.1.3.min.js"></script>
+<script src="painting.js"></script>
+<div class ="Acol">
+	<div class = "col1">
+		<div style="background:green;" class ="co" id="green" onclick="color(this)"></div>
+		<div style="background:lime;" class ="co" id="lime" onclick="color(this)"></div>
+		<div style="background:olive;" class ="co" id="olive" onclick="color(this)"></div>
+		<div style="background:yellow;" class ="co"id="yellow" onclick="color(this)"></div>
+
+		<div style="background:navy;" class ="co" id="navy" onclick="color(this)"></div>
+		<div style="background:blue;" class ="co" id="blue" onclick="color(this)"></div>
+		<div style="background:teal;" class ="co" id="teal" onclick="color(this)"></div>
+		<div style="background:aqua;" class ="co" id="aqua" onclick="color(this)"></div>
+
+	</div>
+
+	<div class ="col2">
+		<div style="background:maroon;" class ="co"id="maroon" onclick="color(this)"></div>
+		<div style="background:red;" class ="co"id="red" onclick="color(this)"></div>
+		<div style="background:orange;" class ="co"id="orange" onclick="color(this)"></div>
+		<div style="background:purple;" class ="co"id="purple" onclick="color(this)"></div>
+
+		<div style="background:black;" class ="co"id="black" onclick="color(this)"></div>
+		<div style="background:gray;" class ="co"id="gray" onclick="color(this)"></div>
+		<div style="background:silver;" class ="co"id="silver" onclick="color(this)"></div>
+		<div style="background:white;" class ="co"id="white" onclick="color(this)"></div>
+	</div>
+</div>
+
+<div class="thik">
+	<input id="b" type="range" max="100" min="1" name="brodness" onchange="brod(this)"></input>
+</div>
+
+<div class="cap">
+	<div id="round" onclick="capchange(this)"></div>
+	<div id="square"onclick="capchange(this)"></div>
+	<div id="butt"onclick="capchange(this)"></div>
+</div>
+<button onclick="display()">undo</button>
+<button onclick="misplay()">reundo</button>
+
+<!-- <button onclick="downlodeit()" id="download">downlode</button> -->
+<!-- <div id="savebutton" class="top">
+	<img src="{{=URL('static', 'images/floppy.svg')}}" id="save" alt="save" class="tool"/>
+</div> -->
+</body>
+</html>
